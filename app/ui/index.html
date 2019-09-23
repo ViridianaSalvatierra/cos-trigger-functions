@@ -11,15 +11,16 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h3>Cloud Object Storage Uploader</h1>
-        <p>This application will upload to cloud object storage. After you've uploaded your image, some functions will be triggered to do some additional image processing and analysis. After some time, you will see the results of that image processing and analysis.</p>
-        <br/>
-        <h4> Upload your Image:</h4>
+        <h3>Subir Fotos del evento</h1>
+          <p>Instrucciones:</p>
+          <p>Guarda las fotos del evento en una carpeta comprimida en zip o rar que lleve por nombre la fecha y nombre del evento y posteriormente, cárgala en el apartado inferior</p>
+        <h4> Carga la carpeta comprimida en zip o rar:</h4>
         <form id="myform" enctype="multipart/form-data">
             <input id="theFile" type="file" name="body" required>
         </form>
         <button class="btn btn-primary" onclick="uploadImageAndGetProcessedImages()"> Upload </button>
       </div>
+       <!--
       <div class="row">
         <div class="col-sm-4 titlerow">
           Original Image
@@ -31,6 +32,7 @@
           Visual Recognition Results
         </div>
       </div>
+    
       <div class="row">
         <div class="col-md-4">
           <img src="https://via.placeholder.com/200x200" class="my-image" id="original-image" style="max-width: 200px; height: auto;"></img>
@@ -41,6 +43,7 @@
         <div class="col-md-4">
             <p id="vr-text"></p>
         </div>
+        -->
       </div>
     </div>
   </body>
