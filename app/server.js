@@ -32,15 +32,16 @@ app.post('/write', (req, res) => {
       console.log(error);
     });
 });
-
+/* Esta parte no se usa*
 app.post('/getSignedUrl', (req, res) => {
   const url = cosInstance.getSignedUrl('getObject', {
     Bucket: processedBucketName,
-    Key: req.body.filename,
+@ -40,7 +40,7 @@ app.post('/getSignedUrl', (req, res) => {
   });
   return res.json({ url });
 });
 
+No se usa*/
 // serve static file (index.html, images, css)
 app.use(express.static(`${__dirname}/ui`));
 
