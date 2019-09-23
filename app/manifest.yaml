@@ -1,5 +1,5 @@
 ---
 applications:
-- name: <YOUR_APPLICATION_NAME>
+- name: TeachAdv99
   memory: 256M
   instances: 1
