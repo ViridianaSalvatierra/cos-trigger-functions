@@ -80,12 +80,16 @@ async function uploadImageAndGetProcessedImages() {
       cache: false,
       timeout: 60000,
     });
+    document.getElementById("myform").reset();
+    alert("Fotografías guardadas exitosamente.");
+    /*
     const image = document.getElementById('original-image');
     image.src = response.url;
     const grayUrl = await getSignedUrl(newFileName, '_grey.png');
     const vrUrl = await getSignedUrl(newFileName, '_vr.txt');
     setTimeout(() => { tryTextUrl(vrUrl); }, 15000);
     setTimeout(() => { tryUrl(grayUrl); }, 15000);
+    */
   } catch (error) {
     console.log('ERROR : ', error);
   }
